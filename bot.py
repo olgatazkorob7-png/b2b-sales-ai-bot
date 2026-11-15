@@ -23,7 +23,7 @@ def get_crm_leads() -> str:
 
 # 2. Настраиваем модель и передаем ей нашу функцию (Tool Calling)
 model = genai.GenerativeModel(
-    model_name='gemini-3.8-flash',
+    model_name='gemini-3.1-flash-lite',
     tools=[get_crm_leads], 
     system_instruction="Ты — профессиональный AI-ассистент отдела продаж. Ты помогаешь менеджеру работать с лидами и писать письма."
 )
